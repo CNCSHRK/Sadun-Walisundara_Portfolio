@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sadun Walisundara — Industrial Automation Portfolio</title>
+  <meta name="description" content="Sadun Walisundara — Industrial Automation Project Manager & Commissioning Engineer. PLC/SCADA, Smart Factory Integration, Test Systems. Portfolio and key projects." />
+  <meta name="theme-color" content="#2a5298" />
+
+  <!-- Structured data for richer search previews -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sadun Walisundara",
+    "jobTitle": "Industrial Automation Project Manager",
+    "description": "Project Manager & Commissioning Engineer specializing in PLC/SCADA, Smart Factory Integration & Test Systems.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangkok",
+      "addressCountry": "Thailand"
+    },
+    "sameAs": [
+      "https://github.com/CNCSHRK"
+    ]
+  }
+  </script>
+
+  <style>
+    /* Accessibility helper */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0 0 0 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      left: 10px;
+      top: 10px;
+      width: auto;
+      height: auto;
+      padding: 8px 12px;
+      background: #fff;
+      color: #1e3c72;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+
+    /* Base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { color: inherit; }
+    a:focus, button:focus { outline: 3px solid #ffd54f; outline-offset: 3px; }
+
+    .container {
+      max-width: 1200px;
+      margin: 24px auto;
+      background: #fff;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    header.header {
+      background: linear-gradient(135deg,#1e3c72 0%,#2a5298 100%);
+      color: #fff;
+      padding: 48px 32px;
+      text-align: center;
+    }
+    header.header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+      letter-spacing: 0.6px;
+    }
+    header .subtitle { font-size: 1.1rem; opacity: 0.95; margin-bottom: 6px; }
+    header .position { font-size: 0.98rem; opacity: 0.92; font-style: italic; }
+    header .meta { margin-top: 12px; font-size: 0.95rem; }
+
+    /* Nav */
+    nav.nav {
+      background: #2a5298;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    nav.nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 0 12px;
+    }
+    nav.nav li { margin: 4px; }
+    nav.nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background 0.18s, transform 0.12s;
+      display: inline-block;
+    }
+    nav.nav a:hover, nav.nav a:focus { background: rgba(255,255,255,0.14); transform: translateY(-1px); }
+
+    /* Sections */
+    main { padding: 28px; }
+    .section {
+      padding: 36px 18px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .section + .section { margin-top: 6px; }
+    .section:nth-child(even) { background: #fbfbfd; }
+    .section h2 {
+      color: #1e3c72;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #2a5298;
+      display: inline-block;
+    }
+    .section h3 { color: #2a5298; font-size: 1.12rem; margin: 18px 0 12px; }
+
+    /* Insight box */
+    .insight-box {
+      background: linear-gradient(135deg,#ffecd2 0%,#fcb69f 100%);
+      padding: 18px;
+      border-radius: 10px;
+      margin: 18px 0;
+      border-left: 6px solid #ff6b6b;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    .insight-box h4 { color: #b71c1c; margin-bottom: 10px; font-size: 1rem; }
+
+    /* Grids */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 18px;
+      margin-top: 14px;
+    }
+    .skill-card {
+      background: #fff;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      border-top: 4px solid #2a5298;
+      transition: transform .18s, box-shadow .18s;
+    }
+    .skill-card:hover { transform: translateY(-6px); box-shadow: 0 10px 26px rgba(0,0,0,0.08); }
+    .skill-card h4 { color: #1e3c72; margin-bottom: 8px; font-size: 1rem; }
+    .skill-card ul { list-style: none; padding-left: 0; }
+    .skill-card li { position: relative; padding-left: 22px; margin: 8px 0; }
+    .skill-card li::before { content: "✓"; position: absolute; left: 0; color: #2a5298; font-weight: 700; }
+
+    /* Project card */
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      margin: 18px 0;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      border-left: 6px solid #2a5298;
+      transition: transform .18s, box-shadow .18s;
+    }
+    .project-card:hover { transform: translateX(6px); box-shadow: 0 14px 38px rgba(0,0,0,0.08); }
+    .project-header { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap; }
+    .project-title { font-size: 1.08rem; color: #1e3c72; font-weight: 700; }
+    .project-meta { background: #eaf5ff; padding: 8px 12px; border-radius: 6px; font-size: 0.92rem; color:#1b4f86; }
+    .tech-tags { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+    .tech-tag { background: #2a5298; color: #fff; padding: 6px 10px; border-radius: 18px; font-size: 0.8rem; font-weight:600; }
+
+    .project-section { margin: 12px 0; }
+    .project-section h5 { color: #2a5298; margin-bottom: 8px; font-size: 0.98rem; }
+    .result-highlight {
+      background: #eaf7ee; padding: 12px; border-radius: 8px; border-left: 5px solid #4caf50; margin: 12px 0;
+      color: #1b5e20;
+    }
+
+    /* Certifications grid */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .cert-card {
+      background: #fff;
+      padding: 12px;
+      border-radius: 10px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+      text-align: center;
+      border: 1px solid rgba(42,82,152,0.06);
+      transition: transform .12s, box-shadow .12s;
+    }
+    .cert-card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,0.06); }
+    .cert-icon { font-size: 2rem; margin-bottom: 8px; }
+    .cert-card h4 { color:#1e3c72; font-size: 0.98rem; margin-bottom: 4px; }
+    .cert-card .issuer { color:#666; font-size:0.86rem; }
+    .cert-card .date { color:#999; font-size:0.82rem; }
+
+    /* Strength items */
+    .strength-item {
+      background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+      color: #fff;
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 10px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+    }
+    .strength-item h4 { font-size: 1rem; margin-bottom: 6px; }
+
+    /* Closing / footer */
+    footer.closing {
+      background: linear-gradient(135deg,#1e3c72 0%,#2a5298 100%);
+      color: white;
+      padding: 36px 18px;
+      text-align: center;
+    }
+    .closing h2 { font-size: 1.4rem; margin-bottom: 12px; }
+    .closing p { font-size: 1rem; margin: 12px auto; max-width: 900px; line-height: 1.7; }
+
+    .cta-button {
+      background: #fff;
+      color: #1e3c72;
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 28px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 10px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    }
+    .cta-button:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,0.14); }
+
+    /* Contact card inside footer */
+    .contact-grid {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .contact-item {
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      padding: 12px 14px;
+      border-radius: 10px;
+      min-width: 220px;
+      text-align: left;
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,0.02);
+    }
+    .contact-item strong { display: block; font-size: 0.95rem; margin-bottom: 6px; color: #fff; }
+    .contact-item a { color: #fff; text-decoration: underline; word-break: break-all; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      header.header { padding: 28px 18px; }
+      .container { margin: 12px; }
+      .project-header { flex-direction: column; align-items:flex-start; gap:8px; }
+      .contact-item { min-width: 160px; }
+    }
+    @media (max-width: 520px) {
+      header.header h1 { font-size: 1.6rem; }
+      .section { padding: 18px; }
+    }
+
+    /* Print */
+    @media print {
+      body { background: #fff; color: #000; }
+      .nav, .cta-button { display: none !important; }
+      .container { box-shadow: none; border-radius: 0; }
+      .section { page-break-inside: avoid; }
+    }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="container" role="document">
+    <header class="header" role="banner" aria-labelledby="name-heading">
+      <h1 id="name-heading">SADUN WALISUNDARA</h1>
+      <div class="subtitle">Industrial Automation Project Manager &amp; Commissioning Engineer</div>
+      <div class="position">Specializing in PLC/SCADA, Smart Factory Integration &amp; Test Systems</div>
+      <div class="meta" aria-hidden="false">
+        <span aria-hidden="true">📍</span><span class="sr-only">Location:</span> Bangkok, Thailand
+        <span aria-hidden="true">&nbsp;|&nbsp;</span>
+        <span aria-hidden="true">🎯</span><span class="sr-only">Position:</span> Project Management Senior Officer – Industrial Automation Solution (Bangpoo)
+      </div>
+    </header>
+
+    <nav class="nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#understanding">Delta Alignment</a></li>
+        <li><a href="#projects">Major Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#strengths">Key Strengths</a></li>
+        <li><a href="#closing">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main" role="main" tabindex="-1">
+      <!-- Overview -->
+      <section id="overview" class="section" aria-labelledby="overview-heading">
+        <h2 id="overview-heading">📋 Professional Overview</h2>
+
+        <p style="font-size:1.03rem; margin-top:8px;">
+          With over <strong>10 years</strong> delivering industrial automation, system commissioning, smart factory digitization,
+          and multi-disciplinary engineering projects across <strong>Thailand, Vietnam, Sri Lanka, Japan, and Europe</strong>,
+          I bring hands-on technical expertise combined with structured project management discipline.
+        </p>
+
+        <div class="insight-box" role="region" aria-label="Interview insights and takeaways">
+          <h4>🎯 Interview Insights</h4>
+          <p><strong>During my discussion I gained clear understanding of:</strong></p>
+          <ul style="margin-left:18px; margin-top:10px;">
+            <li>✓ Importance of <strong>PLC fundamentals and practical engineering</strong></li>
+            <li>✓ The key question: <strong>"How big is the largest project you handled in USD?"</strong></li>
+            <li>✓ Delta's biggest PM challenge: <strong>Scope management &amp; change control</strong></li>
+            <li>✓ KPIs vary by project complexity and execution stage</li>
+            <li>✓ Need for PMs who balance <strong>technical insight + structured governance</strong></li>
+          </ul>
+          <p style="margin-top:10px; font-style:italic;">This portfolio provides the panel a transparent, visual understanding of my experience.</p>
+        </div>
+
+        <h3>🔧 Core Experience Areas</h3>
+        <div class="skills-grid" aria-hidden="false">
+          <div class="skill-card">
+            <h4>🤖 Automation &amp; Control</h4>
+            <ul>
+              <li>PLC / SCADA systems</li>
+              <li>HMI design &amp; programming</li>
+              <li>Industrial networking</li>
+              <li>Safety system validation</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>🏭 Smart Factory Integration</h4>
+            <ul>
+              <li>MES &amp; IoT connectivity</li>
+              <li>Digital Twin implementation</li>
+              <li>Data analytics &amp; dashboards</li>
+              <li>Energy management systems</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>🚗 Automotive Test Systems</h4>
+            <ul>
+              <li>Powertrain test cells</li>
+              <li>E-motor testing (AVL PUMA)</li>
+              <li>ECU–Dyno integration</li>
+              <li>Emission testing systems</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>📊 Project Management</h4>
+            <ul>
+              <li>Scope &amp; change control</li>
+              <li>Multi-site coordination</li>
+              <li>Risk &amp; issue management</li>
+              <li>FAT/SAT execution</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <h2 id="about-heading">👨‍💼 About Me</h2>
+
+        <p style="margin-top:8px;">
+          <strong>Educational Foundation:</strong> Graduated in <strong>Mechatronic Engineering (AIT)</strong>, building a foundation in PLC/SCADA,
+          factory automation, robotics, MES, and industrial quality systems.
+        </p>
+
+        <h3>💻 Technical Strengths</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>PLC &amp; Automation Platforms</h4>
+            <ul>
+              <li>Siemens S7, TIA Portal</li>
+              <li>Mitsubishi FX/Q series</li>
+              <li>Omron, Allen-Bradley</li>
+              <li>Servo tuning &amp; VFDs</li>
+              <li>Industrial safety logic</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>SCADA &amp; Visualization</h4>
+            <ul>
+              <li>Siemens WinCC</li>
+              <li>GE iFIX</li>
+              <li>Citect SCADA</li>
+              <li>AVL PUMA interface</li>
+              <li>Custom dashboards</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Software &amp; Digital Tools</h4>
+            <ul>
+              <li>Python, SQL, OpenCV</li>
+              <li>IoT edge connectivity</li>
+              <li>MES integration</li>
+              <li>Azure/AWS data pipelines</li>
+              <li>Digital Twin modeling</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Industrial Networks</h4>
+            <ul>
+              <li>Profinet / Profibus</li>
+              <li>EtherCAT</li>
+              <li>CAN / CANoe</li>
+              <li>OPC-UA, Modbus TCP</li>
+              <li>Industrial Ethernet</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>📋 Project Management Competencies</h3>
+        <div style="background:#f0f7ff; padding:14px; border-radius:8px; margin-top:10px;">
+          <ul style="columns:2; column-gap:18px;">
+            <li style="margin-bottom:8px;">✓ Scope definition &amp; change control</li>
+            <li style="margin-bottom:8px;">✓ Work breakdown structure (WBS)</li>
+            <li style="margin-bottom:8px;">✓ Milestone planning &amp; S-curves</li>
+            <li style="margin-bottom:8px;">✓ Cross-functional team leadership</li>
+            <li style="margin-bottom:8px;">✓ Risk analysis (FMEA, JSA)</li>
+            <li style="margin-bottom:8px;">✓ Issue escalation protocols</li>
+            <li style="margin-bottom:8px;">✓ Technical documentation</li>
+            <li style="margin-bottom:8px;">✓ FAT/SAT planning &amp; execution</li>
+          </ul>
+        </div>
+
+        <p style="margin-top:12px; font-style:italic; padding:12px; background:#fff3cd; border-left:4px solid #ffc107; border-radius:6px;">
+          <strong>Cultural Alignment:</strong> I follow <strong>disciplined processes, clear documentation, and transparent communication</strong>.
+        </p>
+      </section>
+
+      <!-- Understanding Delta -->
+      <section id="understanding" class="section" aria-labelledby="understanding-heading">
+        <h2 id="understanding-heading">🎯 Understanding Work &amp; Expectations</h2>
+
+        <p style="margin-top:8px;">I align with the following key insights:</p>
+
+        <div class="project-card" role="region" aria-label="Solution oriented approach">
+          <h4 style="margin-bottom:8px;">🏭 Solution-Oriented, Not Product-Oriented</h4>
+          <p><strong>Solutions integrated:</strong></p>
+          <div class="tech-tags" aria-hidden="false">
+            <span class="tech-tag">VFD</span>
+            <span class="tech-tag">PLC</span>
+            <span class="tech-tag">HMI</span>
+            <span class="tech-tag">Servo Systems</span>
+            <span class="tech-tag">FMCS</span>
+            <span class="tech-tag">EMS</span>
+            <span class="tech-tag">IIoT</span>
+            <span class="tech-tag">MES</span>
+            <span class="tech-tag">Smart Manufacturing</span>
+          </div>
+
+          <p style="margin-top:8px;"><strong>My background directly overlaps:</strong></p>
+          <ul style="margin-left:18px;">
+            <li>PLC controls + IoT integration experience</li>
+            <li>MES connectivity projects at AVL &amp; Essem</li>
+            <li>Factory digitalization initiatives at KPMG</li>
+          </ul>
+        </div>
+
+        <div class="project-card" role="region" aria-label="Scope management">
+          <h4>⚠️ Scope Management is the Biggest Challenge</h4>
+          <p><strong>My Approach:</strong></p>
+          <ol style="margin-left:18px;">
+            <li><strong>Clarify scope early</strong> with documented boundary conditions</li>
+            <li><strong>Identify grey areas</strong> → convert into written confirmations</li>
+            <li><strong>Change Request workflow</strong> when client requests new features</li>
+            <li><strong>Transparent risk logs</strong> reviewed weekly with stakeholders</li>
+            <li><strong>Clear acceptance criteria</strong> for FAT/SAT to avoid surprises</li>
+          </ol>
+        </div>
+
+        <div class="project-card" role="region" aria-label="KPI overview">
+          <h4>📊 KPIs Depend on Project Size</h4>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:10px;">
+            <div style="background:#eaf4ff; padding:10px; border-radius:8px;">
+              <strong style="color:#1976d2;">Small/Medium Projects:</strong>
+              <ul style="margin-top:8px;">
+                <li>Commissioning lead time</li>
+                <li>Issue closure rate</li>
+                <li>On-site handover quality</li>
+              </ul>
+            </div>
+            <div style="background:#f6ecff; padding:10px; border-radius:8px;">
+              <strong style="color:#7b1fa2;">Large Projects:</strong>
+              <ul style="margin-top:8px;">
+                <li>Budget adherence</li>
+                <li>Milestone delivery (S-curve)</li>
+                <li>Stakeholder alignment</li>
+                <li>Documentation &amp; safety compliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" role="region" aria-label="Coordination">
+          <h4>🤝 Multi-Party Coordination is Critical</h4>
+          <p><strong>PMs must connect:</strong></p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:10px;">
+            <div style="background:#fff3e0; padding:10px; border-radius:8px; text-align:center;">🤝 Client</div>
+            <div style="background:#e8f5e9; padding:10px; border-radius:8px; text-align:center;">⚙️ Internal Engineering</div>
+            <div style="background:#fce4ec; padding:10px; border-radius:8px; text-align:center;">📦 Procurement</div>
+            <div style="background:#e0f2f1; padding:10px; border-radius:8px; text-align:center;">⚡ Electrical Panel Team</div>
+            <div style="background:#f3e5f5; padding:10px; border-radius:8px; text-align:center;">💻 Software/PLC</div>
+            <div style="background:#e1f5fe; padding:10px; border-radius:8px; text-align:center;">🔧 Commissioning Team</div>
+          </div>
+          <p style="margin-top:10px; font-style:italic;">
+            This is my environment at <strong>AVL &amp; Essem</strong>, coordinating teams across Japan, Vietnam, Thailand, China, EU.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">🚀 Portfolio of Major Automation Projects</h2>
+
+        <!-- VinFast -->
+        <article class="project-card" aria-labelledby="vinfast-title">
+          <div class="project-header">
+            <div>
+              <div id="vinfast-title" class="project-title">🏭 VinFast Vietnam: Powertrain Test Facility Commissioning</div>
+              <div style="color:#666; margin-top:6px;">Global Commissioning Engineer → Integration Engineer</div>
+            </div>
+            <div class="project-meta" aria-hidden="true">
+              <strong>Year:</strong> 2019–2020<br />
+              <strong>Value:</strong> ~USD 6–8 million
+            </div>
+          </div>
+
+          <div class="tech-tags" aria-hidden="true">
+            <span class="tech-tag">AVL PUMA</span>
+            <span class="tech-tag">Siemens PLC</span>
+            <span class="tech-tag">CAN/CANoe</span>
+            <span class="tech-tag">Dyno Systems</span>
+            <span class="tech-tag">Safety PLC</span>
+            <span class="tech-tag">E-Motor Testing</span>
+          </div>
+
+          <div class="project-section">
+            <h5>📋 Scope Managed</h5>
+            <ul style="margin-left:18px;">
+              <li>Full commissioning of engine &amp; e-motor testbeds</li>
+              <li>I/O checks and safety system validation</li>
+              <li>Mapping ECU–dyno communication protocols</li>
+              <li>Integrating 3rd-party equipment (chillers, DAQ, safety modules)</li>
+              <li>FAT/SAT coordination with Vietnamese and AVL global teams</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h5>⚠️ Challenges</h5>
+            <ul style="margin-left:18px;">
+              <li>Timeline pressure with new factory launch</li>
+              <li>Cross-language technical alignment</li>
+              <li>Frequent scope shifts from client engineering team</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h5>💡 Solutions Delivered</h5>
+            <ul style="margin-left:18px;">
+              <li>Created structured I/O validation templates</li>
+              <li>Implemented issue triage workflow reducing troubleshooting time</li>
+              <li>Daily checklists + "red tag" system for dependencies</li>
+              <li>Raised critical risks earlier → prevented costly rework</li>
+            </ul>
+          </div>
+
+          <div class="result-highlight" role="status">
+            <strong>🎯 Result:</strong><br />
+            ✓ All testbeds delivered on schedule<br />
+            ✓ &lt;5% punch-list items during SAT<br />
+            ✓ Trained local Vietnamese engineers<br />
+            ✓ Client commendation for commissioning quality
+          </div>
+
+          <p style="margin-top:10px; padding:10px; background:#f0f7ff; border-radius:8px; font-style:italic;">
+            <strong>📜 Certified:</strong> AVL iGEM 2 Installation &amp; Parametrization (Jan 2019, Graz, Austria)
+          </p>
+        </article>
+
+        <!-- Smart Factory Analytics -->
+        <article class="project-card" aria-labelledby="smartfactory-title">
+          <div class="project-header">
+            <div>
+              <div id="smartfactory-title" class="project-title">📊 Smart Factory Analytics Integration (AVL Thailand)</div>
+              <div style="color:#666; margin-top:6px;">Technical Project Manager</div>
+            </div>
+            <div class="project-meta">
+              <strong>Year:</strong> 2022–2024<br />
+              <strong>Value:</strong> ~USD 300k–500k
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">IoT Edge</span>
+            <span class="tech-tag">SQL Database</span>
+            <span class="tech-tag">OPC-UA</span>
+            <span class="tech-tag">MES Integration</span>
+            <span class="tech-tag">Real-time Dashboards</span>
+            <span class="tech-tag">Digital Twin</span>
+          </div>
+
+          <div class="project-section">
+            <h5>📋 Scope Managed</h5>
+            <ul style="margin-left:18px;">
+              <li>Integrate PLC, sensor, and MES data into real-time dashboards</li>
+              <li>Develop digital twin simulation layer for predictive analytics</li>
+              <li>Lead team of 12 engineers across Thailand + Japan</li>
+              <li>Implement Lean-based improvement loops using FMEA methodology</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h5>⚠️ Challenges</h5>
+            <ul style="margin-left:18px;">
+              <li>Fragmented data sources across multiple systems</li>
+              <li>No unified interface for engineers</li>
+              <li>High manual logging leading to human error</li>
+              <li>Cross-cultural team coordination (Thai–Japanese)</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h5>💡 Solutions Delivered</h5>
+            <ul style="margin-left:18px;">
+              <li>Built central data pipeline via IoT edge devices</li>
+              <li>Created predictive analytics dashboards with AI-driven insights</li>
+              <li>Automated calibration logs eliminating manual entry</li>
+              <li>Used FMEA to systematically eliminate failure points</li>
+            </ul>
+          </div>
+
+          <div class="result-highlight">
+            <strong>🎯 Result:</strong><br />
+            ✓ 30% increase in equipment utilization<br />
+            ✓ 40% faster decision-making cycle<br />
+            ✓ 60% reduction in manual logging<br />
+            ✓ Zero downtime during implementation
+          </div>
+        </article>
+
+        <!-- OpenCV Vision -->
+        <article class="project-card" aria-labelledby="opencv-title">
+          <div class="project-header">
+            <div>
+              <div id="opencv-title" class="project-title">👁️ OpenCV Vision Inspection for Precision Components</div>
+              <div style="color:#666; margin-top:6px;">Automation Engineer | Essem International</div>
+            </div>
+            <div class="project-meta">
+              <strong>Year:</strong> 2017<br />
+              <strong>Value:</strong> ~USD 40k–60k
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Omron PLC</span>
+            <span class="tech-tag">Machine Vision</span>
+            <span class="tech-tag">Quality Control</span>
+          </div>
+
+          <div class="project-section">
+            <h5>📋 Scope</h5>
+            <ul style="margin-left:18px;">
+              <li>Develop automated defect detection system</li>
+              <li>Integrate camera → algorithm → PLC → pneumatic ejector actuator</li>
+              <li>Replace manual inspection process</li>
+              <li>Train operators on new system</li>
+            </ul>
+          </div>
+
+          <div class="result-highlight">
+            <strong>🎯 Result:</strong><br />
+            ✓ Inspection time reduced by 35%<br />
+            ✓ Quality defects reduced significantly<br />
+            ✓ Low-budget but high-impact solution<br />
+            ✓ ROI achieved within 6 months
+          </div>
+        </article>
+
+        <!-- Test System Design -->
+        <article class="project-card" aria-labelledby="testsystem-title">
+          <div class="project-header">
+            <div>
+              <div id="testsystem-title" class="project-title">🔧 Powertrain Test System Design &amp; Blueprinting</div>
+              <div style="color:#666; margin-top:6px;">System Design &amp; Solutions Architect | AVL</div>
+            </div>
+            <div class="project-meta">
+              <strong>Year:</strong> 2021–2022<br />
+              <strong>Scope:</strong> Pre-commissioning
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">AVL PUMA</span>
+            <span class="tech-tag">System Architecture</span>
+            <span class="tech-tag">Simulation Models</span>
+            <span class="tech-tag">CUS Files</span>
+            <span class="tech-tag">Parametrization</span>
+          </div>
+
+          <div class="project-section">
+            <h5>📋 Scope</h5>
+            <ul style="margin-left:18px;">
+              <li>Create comprehensive system architecture files (CUS files, license files)</li>
+              <li>Parametrization using advanced simulators</li>
+              <li>Technical documentation for test cell design</li>
+              <li>Cross-functional alignment between mechanical, electrical, and software teams</li>
+            </ul>
+          </div>
+
+          <div class="result-highlight">
+            <strong>🎯 Outcome:</strong><br />
+            ✓ Accurate cross-functional alignment achieved<br />
+            ✓ Reduced commissioning time by 25% due to proper blueprinting<br />
+            ✓ Zero major design rework needed during installation
+          </div>
+        </article>
+
+        <!-- ERP Transformation -->
+        <article class="project-card" aria-labelledby="erp-title">
+          <div class="project-header">
+            <div>
+              <div id="erp-title" class="project-title">💼 ERP Transformation &amp; Digital Factory Workflow</div>
+              <div style="color:#666; margin-top:6px;">ERP PM + Digital Consultant | KPMG</div>
+            </div>
+            <div class="project-meta">
+              <strong>Year:</strong> 2025<br />
+              <strong>Scope:</strong> Enterprise-level
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">ERP Integration</span>
+            <span class="tech-tag">Workflow Mapping</span>
+            <span class="tech-tag">Change Management</span>
+            <span class="tech-tag">Process Optimization</span>
+          </div>
+
+          <div class="project-section">
+            <h5>📋 Scope</h5>
+            <ul style="margin-left:18px;">
+              <li>Map industrial workflows into ERP modules</li>
+              <li>Stakeholder alignment across departments</li>
+              <li>Process reengineering for digital transformation</li>
+            </ul>
+          </div>
+
+          <div class="result-highlight">
+            <strong>🎯 Outcome:</strong><br />
+            ✓ 30% improvement in process visibility<br />
+            ✓ Successful adoption of predictive workflows<br />
+            ✓ Enhanced cross-departmental collaboration
+          </div>
+        </article>
+
+        <!-- Additional projects including 4-Axis CNC Impeller Milling with GitHub link and image -->
+        <article class="project-card" aria-labelledby="additional-title">
+          <div id="additional-title" class="project-title">📚 Additional Engineering Projects</div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:12px;">
+            <div style="background:#f8f8fb; padding:12px; border-radius:8px;">
+              <strong>⚙️ 4-Axis CNC Impeller Milling</strong>
+              <p style="margin-top:8px; font-size:0.92rem;">CAD/CAM modeling. Toolpaths using Siemens NX 8.5. Simulation via Vericut.</p>
+              <p style="margin-top:6px;"><em style="color:#666; font-size:0.82rem;">Asian Institute of Technology</em></p>
+              <p style="margin-top:8px; font-size:0.9rem;">
+                View the CNC G-code and project repository on GitHub:
+                <a href="https://github.com/CNCSHRK/CNC-GCode-Impeller-Projec" target="_blank" rel="noopener noreferrer">github.com/CNCSHRK/CNC-GCode-Impeller-Projec</a>
+              </p>
+
+              <!-- Image: include attached image file in the repo at assets/impeller-1.png -->
+              <figure style="margin-top:10px;">
+                <img src="assets/impeller-1.png" alt="4-axis CNC impeller simulation (CAD/CAM Vericut simulation)" style="width:100%; border-radius:6px; box-shadow:0 8px 20px rgba(0,0,0,0.06);" />
+                <figcaption style="font-size:0.82rem; color:#666; margin-top:6px;">Simulation preview (add the attached image to assets/impeller-1.png in the repo). Image referenced as 'Image 1'.</figcaption>
+              </figure>
+            </div>
+
+            <div style="background:#f8f8fb; padding:12px; border-radius:8px;">
+              <strong>💡 LED Propeller Clock (Embedded)</strong>
+              <p style="margin-top:8px; font-size:0.92rem;">POV display, Arduino control, IR encoder for interrupts.</p>
+              <em style="color:#666; font-size:0.82rem;">Asian Institute of Technology</em>
+            </div>
+
+            <div style="background:#f8f8fb; padding:12px; border-radius:8px;">
+              <strong>🚤 Autonomous Obstacle-Avoiding Smart Boat</strong>
+              <p style="margin-top:8px; font-size:0.92rem;">Arduino navigation with ultrasonic sensors for real-time obstacle avoidance.</p>
+              <em style="color:#666; font-size:0.82rem;">Praxis Project — AIT</em>
+            </div>
+
+            <div style="background:#f8f8fb; padding:12px; border-radius:8px;">
+              <strong>🎖️ ISO 9001:2015 QMS Implementation</strong>
+              <p style="margin-top:8px; font-size:0.92rem;">QMS implementation for manufacturing processes.</p>
+              <em style="color:#666; font-size:0.82rem;">Essem Tecnopinz (2016)</em>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section" aria-labelledby="certifications-heading">
+        <h2 id="certifications-heading">🏆 Professional Certifications &amp; Training</h2>
+
+        <h3 style="margin-top:12px;">🤖 AI &amp; Machine Learning</h3>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🤖</div>
+            <h4>AWS AI Practitioner Learning Plan</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🧠</div>
+            <h4>Fundamentals of ML and AI</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">⚡</div>
+            <h4>Developing ML Solutions</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🎯</div>
+            <h4>Exploring AI Use Cases</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🔧</div>
+            <h4>Optimizing Foundation Models</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">✍️</div>
+            <h4>Essentials of Prompt Engineering</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Jan 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🔐</div>
+            <h4>Security &amp; Governance for AI</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🤖</div>
+            <h4>Developing Generative AI Solutions</h4>
+            <div class="issuer">Amazon Web Services</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">💬</div>
+            <h4>Gen AI: Beyond the Chatbot</h4>
+            <div class="issuer">Google Cloud</div>
+            <div class="date">Oct 2025</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">📊</div>
+            <h4>Machine Learning</h4>
+            <div class="issuer">Coursera</div>
+            <div class="date">Completed</div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:16px;">📋 Project Management</h3>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">📊</div>
+            <h4>Foundations of Project Management</h4>
+            <div class="issuer">Google</div>
+            <div class="date">Jun 2024</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">⚡</div>
+            <h4>Deeply Practical Project Management</h4>
+            <div class="issuer">Udemy</div>
+            <div class="date">Sep 2022</div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:16px;">🏭 AVL Technical Training</h3>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">⚙️</div>
+            <h4>iGEM 2 Installation &amp; Parametrization</h4>
+            <div class="issuer">AVL Skills Center, Graz, Austria</div>
+            <div class="date">Jan 18–25, 2019</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🔥</div>
+            <h4>WBT Combustion Engine Basics</h4>
+            <div class="issuer">AVL Academy</div>
+            <div class="date">Dec 3, 2018</div>
+          </div>
+          <!-- remaining cert cards retained in repo version -->
+        </div>
+      </section>
+
+      <!-- Strengths -->
+      <section id="strengths" class="section" aria-labelledby="strengths-heading">
+        <h2 id="strengths-heading">💎 Strengths I Contribute</h2>
+
+        <div class="strength-item">
+          <h4>1. 🔧 Hybrid Technical–PM Ability</h4>
+          <p>Hands-on PLC/SCADA/commissioning expertise paired with structured project governance, bridging shop-floor engineering and senior management.</p>
+        </div>
+
+        <div class="strength-item">
+          <h4>2. ⚠️ Strong Scope Control Discipline</h4>
+          <p>Documented boundaries, clear acceptance criteria, and transparent change workflows to reduce scope creep and rework.</p>
+        </div>
+
+        <div class="strength-item">
+          <h4>3. 🤝 Cross-functional Leadership</h4>
+          <p>Proven experience leading Mechanical, Electrical, PLC/Software, IT/Cloud, Procurement, and Client engineering stakeholders.</p>
+        </div>
+
+        <div class="strength-item">
+          <h4>4. 🏭 On-Site Industrial Experience</h4>
+          <p>5+ years commissioning test systems &amp; automation lines across Thailand, Vietnam, and Japan, providing practical factory-floor expertise.</p>
+        </div>
+
+        <div class="strength-item">
+          <h4>5. 🌐 Smart Factory &amp; IIoT Mindset</h4>
+          <p>Aligned with FMCS, EMS, MES integration and energy-efficient smart manufacturing strategies.</p>
+        </div>
+
+        <div class="strength-item">
+          <h4>6. 🇹🇭 Thai + International Cultural Fluency</h4>
+          <p>Respectful, structured, calm under pressure, aligned with Thai workplace expectations while maintaining global standards.</p>
+        </div>
+
+        <div class="strength-item">
+          <h4>7. 📋 Strong Engineering Documentation</h4>
+          <p>Clear technical reports, system diagrams, and transparent risk logs, critical for multi-stakeholder coordination.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="closing" class="closing" role="contentinfo" aria-labelledby="closing-heading">
+      <h2 id="closing-heading">🙏 Thank You</h2>
+
+      <p>
+        Thank you to the <strong>Delta Electronics interview panel</strong> for the opportunity and the insightful technical discussion.
+      </p>
+
+      <!-- Replaced Next Steps paragraph and arranged contact details in a compact contact grid -->
+      <div style="background: rgba(255,255,255,0.08); padding: 14px; border-radius: 8px; margin: 12px auto; max-width: 900px;">
+        <h3 style="margin-bottom:8px;">📞 Next Steps</h3>
+        <p style="margin:0; line-height:1.5;">
+          I hope my portfolio provides necessary information of my experience and has the potential to deliver Delta's challenges.
+          I am available to discuss in deeper technical detail or answer follow-up questions. Please feel free to contact:
+        </p>
+
+        <div class="contact-grid" aria-label="Contact details">
+          <div class="contact-item" role="group" aria-label="WhatsApp">
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/66657163546" target="_blank" rel="noopener noreferrer">065 7163546</a>
+          </div>
+
+          <div class="contact-item" role="group" aria-label="Email">
+            <strong>E-mail</strong>
+            <a href="mailto:Sadun.walisun@gmail.com">Sadun.walisun@gmail.com</a>
+          </div>
+
+          <div class="contact-item" role="group" aria-label="LinkedIn">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/sadun-walisundara-173983a2/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sadun-walisundara-173983a2</a>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:12px; font-size:1rem;">
+        I look forward to the opportunity to contribute to <strong>Delta Electronics Thailand</strong>, supporting smart, sustainable industrial automation solutions.
+      </p>
+
+      <div style="margin-top:10px; padding-top:10px; border-top: 1px solid rgba(255,255,255,0.12);">
+        <p style="font-weight:700; margin:6px 0;">Sadun Walisundara</p>
+        <p style="margin:6px 0;">Industrial Automation Project Manager</p>
+        <p style="margin:6px 0;">📍 Bangkok, Thailand</p>
+      </div>
+
+      <a class="cta-button" href="#overview">↑ Back to Top</a>
+    </footer>
+  </div>
+
+  <!-- Optional small script to enhance keyboard navigation (keeps progressive enhancement) -->
+  <script>
+    // Ensure hashed links focus the target for keyboard users
+    (function() {
+      if (!window.location.hash) return;
+      var el = document.getElementById(window.location.hash.substring(1));
+      if (el && typeof el.focus === 'function') {
+        el.setAttribute('tabindex','-1');
+        el.focus();
+      }
+    })();
+  </script>
+</body>
+</html>
